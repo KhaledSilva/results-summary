@@ -52,21 +52,41 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 50px;
+    border-radius: 0 50px 50px 0;
     padding: 20px 50px;
 }
 
-.item {
-    display: flex;
+.itens {
     width: 100%;
-    justify-content: center;
-    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.reaction{
+ .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.item p {
+    color: rgba(128, 128, 128, 0.765);
+    font-weight: 800;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item span {
+    color: #111111;
+    font-weight: 800;
+}
+
+.itens .reaction{
     background-color: hsl(0, 100%, 67%, 0.1);
     color: hsl(0, 100%, 67%);
 }
@@ -88,6 +108,7 @@ body {
 
 .btn-continue {
     width: 100%;
+    margin-top: 40px;
     background-color: hsl(224, 30%, 27%);
     color: #ffffff;
     font-size: 18px;
