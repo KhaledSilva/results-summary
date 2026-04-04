@@ -1,36 +1,39 @@
 body {
     background-color: hsl(221, 100%, 96%);
     font-family: "Hanken Grotesk", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 5rem; 
 }
 
 .your-result {
-    width: 400px;
-    height: 500px;
+    width: 25rem; 
+    height: 31.25rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: #ffffff;
-    border-radius: 30px;
-    padding: 20px 50px;
+    border-radius: 1.875rem; 
+    padding: 1.25rem 3.125rem; 
     position: relative;
     z-index: 2;
 }
+
 .your-result-title {
-    font-size: 26px;
+    font-size: 1.625rem;
     color: rgba(255, 255, 255, 0.75);
-    margin: 15px;
+    margin: 0.9375rem;
 }
 
 .darkest-circle {
@@ -38,15 +41,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 190px;
-    height: 190px;
-    background: linear-gradient(  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 11.875rem; 
+    height: 11.875rem; 
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 100%;
-    margin-top: 20px;
+    margin-top: 1.25rem; 
 }
 
 .result-value {
-    font-size: 70px;
+    font-size: 4.375rem; 
     margin: 0;
     font-weight: bold;
 }
@@ -58,52 +61,53 @@ body {
 }
 
 .result-title {
-    font-size: 30px;
-    margin-top: 25px;
+    font-size: 1.875rem; 
+    margin-top: 1.5625rem; 
 }
 
 .results-description {
-    font-size: 18px;
+    font-size: 1.125rem; 
     color: rgba(255, 255, 255, 0.75);
-    margin: 20px 10px;
-    padding: 0 10px;
+    margin: 1.25rem 0.625rem; 
+    padding: 0 0.625rem; 
     text-align: center;
 }
 
 .summary {
-    width: 400px;
-    height: 500px;
+    width: 25rem; 
+    height: 31.25rem; 
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 30px; 
-    padding: 20px 40px 30px 90px;
-    margin-left: -50px;
+    border-radius: 1.875rem; 
+    padding: 1.25rem 2.5rem 1.875rem 5.625rem; 
+    margin-left: -3.125rem; 
     z-index: 1;
 }
 
 .summary-title {
-    font-size: 26px;
-    margin: 15px;
+    font-size: 1.625rem; 
+    margin: 0.9375rem; 
 }
 
 .itens {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    margin-top: 10px;
+    gap: 1.125rem; 
+    margin-top: 0.625rem; 
 }
 
- .item {
+.item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 10px;
+    height: 3.125rem; 
+    padding: 0 1.25rem; 
+    border-radius: 0.625rem; 
     font-weight: 600;
 }
+
 .item p {
     color: rgba(128, 128, 128, 0.765);
 }
@@ -111,7 +115,7 @@ body {
 .left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem; 
 }
 
 .item span {
@@ -144,38 +148,35 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
-    margin-top: 40px;
+    height: 3.75rem; 
+    margin-top: 2.5rem; 
     background-color: hsl(224, 30%, 27%);
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem; 
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 3.125rem; 
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: hsl(224, 30%, 27%);
-  color: white;
-  text-align: center;
-  padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    text-align: center;
+    padding: 0.9375rem; 
 }
 
-@media (max-width: 480px) {
-    body {
-        flex-direction: column;
-        height: auto;
-    }
+@media (max-width: 624px) {
     .container {
         flex-direction: column;
         margin: 0;
     }
     .your-result {
         width: 100%;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 1.875rem 1.875rem; 
+        margin-bottom: -2rem;
     }
     .results-description {
         padding: 0;
@@ -184,7 +185,7 @@ body {
         width: 100%;
         height: auto;
         margin-left: 0;
-        padding: 30px;
+        padding: 1.875rem; 
     }
     .footer {
         position: static;
