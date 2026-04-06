@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-a-css-flexbox-and-media-queries-4ZktcQEL7O)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-a-css-flexbox-and-media-queries-dXpi1t7xqx)
 - Live Site URL: [Click here](https://khaledsilva.github.io/results-summary/)
 
 ## My process
